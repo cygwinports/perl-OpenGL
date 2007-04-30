@@ -1,0 +1,76 @@
+perl-OpenGL
+-------------------------------------------
+Perl module to display 3D data using OpenGL, GLU, and GLUT.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libGL1-6.5.1-1
+  libGLU1-6.5.1-1
+  libX11_6-1.1.1-1
+  libglut3-2.4.0-1
+  perl-5.8.7-5
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  perl-5.8.7-5
+
+Canonical homepage:
+  http://search.cpan.org/~bfree/OpenGL/
+
+Canonical download:
+  http://www.cpan.org/authors/id/B/BF/BFREE/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-OpenGL-0.55-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-OpenGL-0.55-X.cygport all
+
+This will create:
+  /usr/src/perl-OpenGL-0.55-X-src.tar.bz2
+  /usr/src/perl-OpenGL-0.55-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/perl-OpenGL.sh
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/OpenGL.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/OpenGL/.packlist
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/OpenGL/OpenGL.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/OpenGL/OpenGL.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/OpenGL/autosplit.ix
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/OpenGL/libOpenGL.dll.a
+  /usr/share/doc/Cygwin/perl-OpenGL-0.55.README
+  /usr/share/doc/perl-OpenGL-0.55/COPYRIGHT
+  /usr/share/doc/perl-OpenGL-0.55/Changes
+  /usr/share/doc/perl-OpenGL-0.55/INSTALL
+  /usr/share/doc/perl-OpenGL-0.55/README
+  /usr/share/doc/perl-OpenGL-0.55/TODO
+  /usr/share/perl/cygwin-pods/5.8/OpenGL.pod
+
+------------------
+
+Port Notes:
+
+----- version 0.55-1 -----
+Version bump.
+
+----- version 0.54-2 -----
+Rebuilt against perl-5.8.6.
+A redone POD and manpage are now included.
+
+----- version 0.54-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
