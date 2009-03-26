@@ -1,4 +1,4 @@
-category: Perl
-requires: cygwin perl libGL1 libGLU1 libX11_6 libglut3
+category: Perl X11
+requires: cygwin perl libgcc1 libGL1 libGLU1 libglut3 libX11_6
 sdesc: "Perl bindings for GLX and GLUT"
 ldesc: "Perl module to display 3D data using OpenGL, GLU, GLUT, and GLX"
