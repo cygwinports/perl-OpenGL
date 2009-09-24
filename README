@@ -3,58 +3,46 @@ perl-OpenGL
 Perl module to display 3D data using OpenGL, GLU, and GLUT.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-61
   libgcc1-4.3.2-2
-  libGL1-7.2-10
-  libGLU1-7.2-10
+  libGL1-7.4.4-1
+  libGLU1-7.4.4-1
   libglut3-2.4.0-1
-  libX11_6-1.2-10
+  libX11_6-1.2.2-1
   perl-5.10.0-5
 
 Build requirements:
 (besides corresponding devel packages)
-  binutils-20080624-2
-  cygport-0.9.6-1
+  binutils-2.19.51-1
+  cygport-0.9.9-1
   gcc4-core-4.3.2-2
   make-3.81-2
 
 Canonical homepage:
-  http://search.cpan.org/~bfree/OpenGL/
+  http://search.cpan.org/dist/OpenGL/
 
 Canonical download:
-  http://www.cpan.org/authors/id/B/BF/BFREE/
+  http://www.cpan.org/authors/id/C/CH/CHM/
 
 -------------------------------------------
 
 Build instructions:
-  unpack perl-OpenGL-0.57-X-src.tar.bz2
+  unpack perl-OpenGL-0.58-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-OpenGL-0.57-X.cygport all
+  cygport ./perl-OpenGL-0.58-X.cygport all
 
 This will create:
-  /usr/src/perl-OpenGL-0.57-X-src.tar.bz2
-  /usr/src/perl-OpenGL-0.57-X.tar.bz2
+  /usr/src/perl-OpenGL-0.58-X-src.tar.bz2
+  /usr/src/perl-OpenGL-0.58-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/OpenGL.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/OpenGL.pod
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/OpenGL/Config.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/OpenGL/.packlist
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/OpenGL/OpenGL.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/OpenGL/autosplit.ix
-  /usr/share/doc/perl-OpenGL/COPYRIGHT
-  /usr/share/doc/perl-OpenGL/README
-  /usr/share/doc/perl-OpenGL/TODO
-  /usr/share/man/man3/OpenGL.3pm.gz
-
-------------------
-
 Port Notes:
+
+----- version 0.58-1 -----
+Version bump.
 
 ----- version 0.57-1 -----
 Initial release for Cygwin 1.7.
