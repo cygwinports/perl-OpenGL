@@ -1,0 +1,15 @@
+CPAN_AUTHOR=chm
+inherit perl xvfb
+
+NAME="perl-OpenGL"
+VERSION=0.67
+RELEASE=1
+CATEGORY="Perl"
+SUMMARY="Perl bindings for GLX and GLUT"
+DESCRIPTION="Perl module to display 3D data using OpenGL, GLU, GLUT, and GLX"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	xvfb_run perl_compile
+}

@@ -1,8 +1,0 @@
-CPAN_AUTHOR=chm
-inherit perl xvfb
-
-src_compile() {
-	lndirs
-	cd ${B}
-	xvfb_run perl_compile
-}
