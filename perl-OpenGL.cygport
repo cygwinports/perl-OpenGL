@@ -2,16 +2,14 @@ CPAN_AUTHOR=chm
 inherit perl xvfb
 
 NAME="perl-OpenGL"
-VERSION=0.6704
-RELEASE=2
+VERSION=0.70
+RELEASE=1
 CATEGORY="Perl"
 SUMMARY="Perl bindings for GLX and GLUT"
 DESCRIPTION="Perl module to display 3D data using OpenGL, GLU, GLUT, and GLX"
 
 PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/perl-OpenGL.git/plain/0001-Don-t-check-current-display-for-extensions.patch
-	http://pkgs.fedoraproject.org/cgit/perl-OpenGL.git/plain/OpenGL-0.6704-Prefer-system-GL-gl.h-on-non-Win32.patch
-	http://pkgs.fedoraproject.org/cgit/perl-OpenGL.git/plain/OpenGL-0.6704-Delete-functions-removed-from-Mesa.patch
+	http://pkgs.fedoraproject.org/cgit/rpms/perl-OpenGL.git/plain/0001-Don-t-check-current-display-for-extensions.patch
 "
 
 DISTCLEANFILES="include/GL/freeglut*.h include/GL/gl.h include/GL/gl[eux]*.h include/GL/wglext.h"
@@ -19,6 +17,7 @@ DISTCLEANFILES="include/GL/freeglut*.h include/GL/gl.h include/GL/gl[eux]*.h inc
 src_compile() {
 	lndirs
 	cd ${B}
+	CFLAGS+=" -DNO_GL_MESA_resize_buffers"
 	perl_compile dist=NO_EXCLUSIONS
 }
 
