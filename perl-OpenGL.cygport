@@ -1,8 +1,9 @@
 CPAN_AUTHOR=chm
+CPAN_VERSION=${PV%00}
 inherit perl xvfb
 
 NAME="perl-OpenGL"
-VERSION=0.70
+VERSION=0.7000
 RELEASE=1
 CATEGORY="Perl"
 SUMMARY="Perl bindings for GLX and GLUT"
